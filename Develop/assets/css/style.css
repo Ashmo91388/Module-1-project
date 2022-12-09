@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    
 }
 
 body {
@@ -9,19 +12,22 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    
+    
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
+
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #d9dcd6;  
 }
 
 .header div {
@@ -32,23 +38,20 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul li{
     list-style-type: none;
-}
-
-.header div ul li {
     display: inline-block;
     margin-left: 25px;
+    float: right;
+    
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
-p {
-    font-size: 16px;
-}
+/*removed  color: #ffffff;
+    text-decoration: none; 
+    and added to * selector (redundant container) */
+
+/* removed  font-size: 16px; from p element as font is overwritten in .search-engine-optimization h2 */
 
 .hero {
     height: 800px;
@@ -73,75 +76,46 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    
 }
 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 25px;
+    padding: 25px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
+    background-color: #2589bd; 
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
 }
+/* removed  color: #ffffff; from .benefit-lead, .benefit-brand, and benefit-cost as it is relevant to * universal selector, moved  margin-bottom: 32px; to .benefits semantic element; added 10px padding to line 97*/
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefits h3{
     margin-bottom: 10px;
     text-align: center;
+    padding:10px;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefits img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
 
-.benefit-brand img {
-    display: block;
+}
+/* created .benefits img semanatic element and added  display: block;
     margin: 10px auto;
-    max-width: 150px;
-}
+    max-width: 150px; for all .benefits elements to be targeted, removed reduntant code*/
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
+    .search-engine-optimization {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
 
 .online-reputation-management {
     margin-bottom: 20px;
@@ -158,7 +132,7 @@ p {
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 .search-engine-optimization img {
@@ -194,6 +168,11 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
+.footer h2 {
+    font-size: 20px;
+}
+
 
 .footer h2 {
     font-size: 20px;
